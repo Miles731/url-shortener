@@ -73,7 +73,7 @@ const Link = () => {
           <span className="text-6xl font-extrabold hover:underline cursor-pointer">
             {url?.title}
           </span>
-          <a href={`https://url-shortener-eight-sage.vercel.app/{link}`} target="_blank"
+          <a href={url?.original_url} target="_blank"
           className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer">
             https://shortly.in/{link}
           </a>
