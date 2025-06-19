@@ -66,6 +66,7 @@ const longLink = searchParams.get("createNew");
         await fnLogin(formData);
 
     } catch (e) {
+      console.log(e)
       const newErrors = {}
       e.inner.forEach((error) => {
         newErrors[error.path] = error.message;
