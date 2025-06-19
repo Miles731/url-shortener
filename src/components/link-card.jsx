@@ -37,7 +37,7 @@ const LinkCard = ({ url, fetchUrls }) => {
       <Link to={`/link/${url?.id}`} className="flex flex-col flex-1">
         <span className="text-3xl font-extrabold hover:underline cursor-pointer">{url?.title }</span>
         <span className="text-2xl font-bold text-blue-400 hover:underline cursor-pointer">
-          https://url-shortener-eight-sage.vercel.app/{url?.custom_url ? url?.custom_url : url.short_url}
+          https://shortly.in/{url?.custom_url ? url?.custom_url : url.short_url}
         </span>
         <span className="flex items-center gap-1 hover:undeline cursor-pointer">{url?.original_url}</span>
         <span className="flex items-end font-extralight text-sm flex-1">{new Date(url?.created_at).toLocaleString()}</span>
